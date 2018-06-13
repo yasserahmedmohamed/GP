@@ -1,0 +1,46 @@
+
+volume 16
+
+0   b   NULL   0   b   
+0   t   NULL   0   t   
+0   T   NULL   0   T   
+0   dZ   NULL   0   Z   
+0   H   NULL   0   X   
+0   X   NULL   0   x   
+0   d   NULL   0   d   
+0   D   NULL   0   D   
+0   r   NULL   0   r
+0   z   NULL   0   z
+0   s   NULL   0   s
+0   S   NULL   0   S
+0   s[   NULL   0   s.
+0   dH   NULL   0   d.
+0   t[   NULL   0   t.
+0   Z   NULL   0   z.
+0   A   NULL   0   H
+0   gH   NULL   0   G
+0   f   NULL   0   f
+0   q   NULL   0   q
+0   k   NULL   0   k
+0   l   NULL   0   l
+0   m   NULL   0   m
+0   n   NULL   0   n
+0   h   NULL   0   h
+0   w   NULL   0   w
+0   j   NULL   0   j
+0   ?   NULL   0   ?
+0   p   NULL   0   NULL
+0   g   NULL   0   NULL
+0   a:  NULL   0   aa
+0   u:  NULL   0   uu
+0   i:  NULL   0   ii
+0   t[   a   100   t. a.
+0   Z   a   100   z. a.
+0   u   NULL   0   u
+0   i   NULL   0   i
+0   a   NULL   0   a
+0   u   NULL   0   u
+0   i   NULL   0   i
+
+
+

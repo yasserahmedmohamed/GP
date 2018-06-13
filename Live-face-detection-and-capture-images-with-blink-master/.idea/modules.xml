@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:\college\GP\Live-face-detection-and-capture-images-with-blink-master\GP.iml" filepath="D:\college\GP\Live-face-detection-and-capture-images-with-blink-master\GP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Live-face-detection-and-capture-images-with-blink-master.iml" filepath="$PROJECT_DIR$/Live-face-detection-and-capture-images-with-blink-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,4 @@
+eSpeak-Arabic is part of a larger open source project named eSpeak.
+eSpeak is a cross-platform, text-to-speech software, supporting over ninety languages at the time of this writing. It is utilised on Windows, Linux and Mac, and has been ported to Android as well. 
+This project aims to use crowd-sourcing to improve the pronunciation of Arabic words in eSpeak. It has been created by Taha Zerrouki. 
+http://arespeak.sourceforge.net

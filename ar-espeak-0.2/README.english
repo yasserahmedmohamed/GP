@@ -1,0 +1,46 @@
+How to add Arabic files to espeak (English manual):
+
+Windows
+=============
+1. Download eSpeak from espeak.sf.net
+2. While you are installing eSpeak on your computer, type "ar", 'mb-ar1" and "mb-ar2" as the language name.
+3- Unzip the Ar-espeak
+4. After finishing the wizard, copy "espeak-data" files in to "C:\Program Files\eSpeak\espeak-data\"
+
+
+
+Linux
+=============
+1. Test if espeak is installed on your system, you can download it from from http://espeak.sf.net
+2. Verify the path for espeak-data
+	under Fedora espeak-data path is /usr/share/espeak-data
+3- Unzip the Arf-espeak
+4- Copy the espeak-data files into your specified path ( e.g. /usr/share/espeak-data)
+5- Test if espak use arabic voices
+	espeak --voices=ar
+it gives an output like this:
+	espeak --voices=ar
+	Pty Language Age/Gender VoiceName       File        Other Langs
+	 1  ar             M  arabic-mbrola-1   mb/mb-ar1   
+	 2  ar             M  arabic-mbrola-2   mb/mb-ar2   
+	 5  ar             M  arabic            ar   
+
+6- Test sound by using an vocalized texts
+	espeak 'السلام عليكم' -v ar
+
+USAGE
+=======
+Ar-speak contains three voice files, named ar, mb-ar1, mb-ar2. You can call espeak by one of them like this:
+	espeak 'السلام عليكم' -v ar
+	espeak 'السلام عليكم' -v mb-ar1
+	espeak 'السلام عليكم' -v mb-ar2
+You can also use files 
+	espeak -f sample.txt -v ar
+Note:
+====
+To have a better result, please use a vocalized texts.
+You can vocalize your arabic texts by Mishkal Arabic text vocalization system.
+You can download Mishkal from http://mishkal.sourceforge.net
+or use it online http://tahadz.com/mishkal
+
+

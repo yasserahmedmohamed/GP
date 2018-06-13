@@ -1,0 +1,111 @@
+phoneme #r  virtual
+// Used for "r" sounds
+endphoneme
+
+
+phoneme H	// arabic Hah
+  vls phr frc
+  ipa U+0127
+  lengthmod 5 
+  WAV(vwl_ar/H2) 
+endphoneme
+
+phoneme Z // arabic ZAH .Todo
+  vls phr frc
+  lengthmod 5 
+  voicingswitch z  
+  WAV(vwl_ar/ZH4) 
+endphoneme
+
+phoneme A	// arabic Ain
+  vls phr frc
+  //ipa U+0127
+  voicingswitch a  
+  lengthmod 5   
+  WAV(vwl_ar/AN1) 
+endphoneme
+
+phoneme gH	//arabic Ghain
+  vls uvl frc
+  voicingswitch R  
+  lengthmod 5 
+  //ipa U+0280
+  WAV(vwl_ar/GH2)
+endphoneme
+
+phoneme dH	//arabic Dhad
+  vls dnt stop
+  voicingswitch d
+  length 120
+  WAV(vwl_ar/da7)
+endphoneme
+
+phoneme s[
+  vls dnt stop 
+  //voicingswitch s
+  lengthmod 7
+  WAV(vwl_ar/SA1)
+endphoneme
+
+
+// Long Vowels
+
+
+
+
+
+phoneme i
+  vowel starttype #i endtype #i
+  length 200
+  FMT(vowel/i)
+endphoneme
+
+
+phoneme u
+  vowel starttype #i endtype #i
+  length 200
+  FMT(vowel/u_bck2)
+endphoneme
+
+
+// Short Vowels
+
+phoneme a
+  vowel starttype #i endtype #i
+  length 160
+  unstressed
+  FMT(vowel/&)
+endphoneme
+
+
+phoneme e
+  vowel starttype #i endtype #i
+  length 160
+  FMT(vowel/e_mid2)
+endphoneme
+
+
+phoneme o
+  vowel starttype #i endtype #i
+  length 160
+  FMT(vowel/o_mid)
+endphoneme
+
+
+// Diphthongs
+
+
+phoneme eI
+  vowel starttype #i endtype #i
+  length 220
+  FMT(vdiph/eei_2)
+endphoneme
+
+
+phoneme oU
+  vowel starttype #i endtype #i
+  length 220
+  FMT(vdiph/ou_2)
+endphoneme
+
+
