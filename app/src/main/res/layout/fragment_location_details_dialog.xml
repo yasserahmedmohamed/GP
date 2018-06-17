@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ourteam.gradproject.com.first_end_virsion_gp.Fragments.LocationDetailsDialog">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/atm_imge"
+        android:layout_width="40dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/atm_name"
+        android:layout_toRightOf="@+id/atm_imge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_toRightOf="@+id/atm_imge"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/atm_name"
+        android:layout_height="wrap_content" />
+    <RatingBar
+        android:layout_width="match_parent"
+        android:isIndicator="true"
+        android:layout_below="@+id/atm_imge"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+</FrameLayout>

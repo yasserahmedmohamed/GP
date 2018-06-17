@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/main"
+            android:icon="@drawable/ic_home"
+            android:title="الرئيسيه" />
+
+        <item
+            android:id="@+id/history"
+
+            android:icon="@drawable/ic_history"
+            android:title="السجل" />
+
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/ic_terms"
+            android:title="الشروط والاحكام" />
+        <item
+            android:id="@+id/nav_paymenysplace"
+            android:icon="@drawable/ic_payment"
+            android:title="اماكن صرف المعاش" />
+    </group>
+
+    <item android:title="للتواصل">
+        <menu>
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/ic_connect_us"
+                android:title="تواصل معنا" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="مشاركه التطبيق" />
+
+        </menu>
+    </item>
+
+</menu>

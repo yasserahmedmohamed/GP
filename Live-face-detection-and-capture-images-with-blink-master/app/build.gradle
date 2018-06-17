@@ -20,9 +20,22 @@ android {
 }
 
 dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
+    implementation 'com.android.support:design:27.1.1'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.google.android.gms:play-services-vision:9.8.0'
     compile 'junit:junit:4.12'
+    //hide toolbar
+    implementation 'com.jaeger.statusbarutil:library:1.4.0'
+//maps
+    compile 'com.google.android.gms:play-services-maps:11.8.0'
+    //butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    // retrofit, gson
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
 }

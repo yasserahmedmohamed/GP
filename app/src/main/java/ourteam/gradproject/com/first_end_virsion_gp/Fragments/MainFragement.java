@@ -100,6 +100,7 @@ public class MainFragement extends Fragment {
 
     @BindView(R.id.instructions_text)
     LinearLayout instructions_text;
+
     @BindView(R.id.start_operation)
     Button start_operation;
     @Override
@@ -108,7 +109,6 @@ public class MainFragement extends Fragment {
         View view = inflater.inflate(R.layout.fragment_main_fragement, container, false);
         ButterKnife.bind(this,view);
         get_device_info();
-//        TextView testtext = view.findViewById(R.id.testtext);
 //        testtext.setText(myDeviceModel);
 
       get_currnet_location();
@@ -118,15 +118,17 @@ public class MainFragement extends Fragment {
     }
 
     int y=0;
+
     @OnClick(R.id.start_operation)
     public void start_operation_button(){
-        instructions_text.setVisibility(View.VISIBLE);
-        start_operation.setBackground(getContext().getDrawable(R.drawable.redius_white_gray_shape));
-        y=1;
-        start_operation.setText("البدأ الان");
         if (y==1){
             Intent intent=new Intent(getContext(), DetectionActivity.class);
             startActivity(intent);
+        }else {
+            instructions_text.setVisibility(View.VISIBLE);
+            start_operation.setBackgroundResource(R.drawable.redius_white_gray_shape);
+            y = 1;
+            start_operation.setText("البدأ الان");
         }
     }
 
@@ -212,7 +214,7 @@ public class MainFragement extends Fragment {
         assert locationManager != null;
         boolean GpsStatus = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
 
-        if (GpsStatus) {
+        if (!GpsStatus) {
 
             showSettingsAlert();
         } else {
@@ -309,5 +311,14 @@ public class MainFragement extends Fragment {
 
     }
 
-
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (y==1){
+            instructions_text.setVisibility(View.GONE);
+            start_operation.setText("لقد تم ارسال طلبك ");
+            start_operation.setClickable(false);
+            start_operation.setBackgroundResource(R.drawable.redius_white_black_shape);
+        }
+    }
 }

@@ -18,6 +18,7 @@ android {
     }
 }
 
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
@@ -30,9 +31,8 @@ dependencies {
     //hide toolbar
     implementation 'com.jaeger.statusbarutil:library:1.4.0'
 //maps
-    compile 'com.google.android.gms:play-services-maps:11.8.0'
-    //recycleview
-    compile 'com.android.support:recyclerview-v7:21.0.+'
+    compile 'com.google.android.gms:play-services-maps:9.8.0'
+
 //face detection api
     compile 'com.google.android.gms:play-services-vision:9.8.0'
 //butterknife
@@ -42,4 +42,10 @@ dependencies {
     compile 'com.google.code.gson:gson:2.6.2'
     compile 'com.squareup.retrofit2:retrofit:2.0.2'
     compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+
+    //
+    compile 'org.apache.httpcomponents:httpcore:4.4.1'
+    compile 'org.apache.httpcomponents:httpclient:4.5'
+    compile 'org.apache.httpcomponents:httpmime:4.4'
+
 }
